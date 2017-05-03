@@ -9,6 +9,8 @@ When building websites, often the semantics for SEO and the design can clash. In
 
 This package will allow you to set a default prop on the Component and then override it with the `tag` prop.
 
+If no prop and no default prop is set the function will default to a div tag.
+
 
 ## Installation
 
@@ -26,22 +28,24 @@ styledTag(styles: string);
 ```js
 import { css } from 'styled-components';
 import styledTag from 'styled-tag';
-  
+
 const Title = styledTag(css`
   color: palevioletred;
-`;
+`);
 
 Title.defaultProps = {
-  tag: h1
-}
+  tag: 'h1'
+};
 
 export default () => (
-  <Title>
-    Inspect me to see that I am the default h1.
-  </Title>
+  <div>
+    <Title>
+      Inspect me to see that I am the default h1.
+    </Title>
 
-  <Title tag='h2'>
-    Inspect me to see that I am a h2.
-  </Title>
+    <Title tag='h2'>
+      Inspect me to see that I am a h2.
+    </Title>
+  </div>
 );
 ```
