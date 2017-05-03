@@ -1,0 +1,28 @@
+{
+  "name": "styled-tag",
+  "version": "0.1.0",
+  "description": "Styled tag allows you to change the HTML Tag on components built with styled-components.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theshaune/styled-tag.git"
+  },
+  "keywords": [
+    "styled-components",
+    "react",
+    "css"
+  ],
+  "author": "Shaune West",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/theshaune/styled-tag/issues"
+  },
+  "homepage": "https://github.com/theshaune/styled-tag#readme",
+  "dependencies": {
+    "react": "^15.5.4",
+    "styled-components": "^1.4.6"
+  }
+}
