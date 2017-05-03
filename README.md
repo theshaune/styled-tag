@@ -20,11 +20,11 @@ npm install styled-tag --save
 ## Usage
 
 ```js
-styledIf(match: string, styles: string);
+styledTag(styles: string);
 ```
 
 ```js
-import styled, { css } from 'styled-components';
+import { css } from 'styled-components';
 import styledTag from 'styled-tag';
   
 const Title = styledTag(css`
